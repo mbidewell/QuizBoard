@@ -35,24 +35,22 @@ $(function() {
 	getQuiz();
 
 	$(".unanswered").click(function() {
-		if($(this).hasClass("unanswered")) {
-			var $questionDiv = $("#questionContainer");
-			var $question = $("#question");
-			if(gQuestions[this.id] != null) {
-				$question.text(gQuestions[this.id]);	
-			} else {
-				$question.text(this.id);
-			}
-			gCurrQuestion = this;
-			$questionDiv.center();
-			$questionDiv.show();
+		var $questionDiv = $("#questionContainer");
+		var $question = $("#question");
+		if(gQuestions[this.id] != null) {
+			$question.text(gQuestions[this.id]);	
+		} else {
+			$question.text(this.id);
 		}
+		gCurrQuestion = this;
+		$questionDiv.center();
+		$questionDiv.show();
 	});
 	$("#correct").click(function() {
 		var $questionDiv = $("#questionContainer");
 		$questionDiv.hide();
-		$(gCurrQuestion).addClass("answered");
-		$(gCurrQuestion).removeClass("unanswered");
+		$(gCurrQuestion).off("click");
+		$(gCurrQuestion).text("");
 	});	
 	$("#incorrect").click(function() {
 		var $questionDiv = $("#questionContainer");

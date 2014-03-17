@@ -6,51 +6,51 @@ th {
 	height: 100px;
 	width: 16%;
 }
+
 .unanswered {
-    text-align: center;
-    font-size: 300%;
-    color: yellow;
-    background-color: blue;
-    text-shadow: 2px 2px lightgray;
-    height: 100px;
+	text-align: center;
+	font-size: 300%;
+	color: yellow;
+	background-color: blue;
+	text-shadow: 2px 2px lightgray;
+	height: 100px;
 }
-.answered {
-    color: blue;
-    background-color: blue;
-    height: 100px;
-}
+
 table {
 	margin: 0 auto;
 }
+
 #question {
 	text-align: center;
 	vertical-align: middle;
 	height: 400px;
-    font-size: 300%;
-    color: yellow;
-    background-color: blue;
-    text-shadow: 2px 2px lightgray;		
+	font-size: 300%;
+	color: yellow;
+	background-color: blue;
+	text-shadow: 2px 2px lightgray;		
  	
 }
 
 #correct {
-    text-align: center;
-    font-size: 300%;
-    color: green;
-    background-color: darkgrey;
-    text-shadow: 2px 2px lightgray;
-    width: 50%;
+	text-align: center;
+	font-size: 300%;
+	color: green;
+	background-color: darkgrey;
+	text-shadow: 2px 2px lightgray;
+	width: 50%;
 }
+
 #incorrect {
-    text-align: center;
-    font-size: 300%;
-    color: red;
-    background-color: darkgrey;
-    text-shadow: 2px 2px lightgray;
-    width: 50%;
+	text-align: center;
+	font-size: 300%;
+	color: red;
+	background-color: darkgrey;
+	text-shadow: 2px 2px lightgray;
+	width: 50%;
 }
+
 #questionContainer {
-    z-index: 5;	
+	z-index: 5;	
 	-moz-box-shadow: 0 4px 8px rgba(0,0,0,0.5);
 	-webkit-box-shadow: 0 4px 8px rgba(0,0,0,0.5);
 	box-shadow: 0 4px 8px rgba(0,0,0,0.5);
